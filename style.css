@@ -1,0 +1,395 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f8fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navbar */
+header {
+    background-color: #006400; /* Dark green */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo__cure {
+    color: #FFFFFF; /* White */
+}
+
+.logo__mentor {
+    color: #ff6347; /* Tomato red */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ff6347; /* Tomato red for hover effect */
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 30px; /* Large size for mobile */
+}
+
+/* Search Bar */
+.search-bar {
+    margin: 20px auto;
+    max-width: 600px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #ff6347; /* Tomato red */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.search-bar button:hover {
+    background-color: #cc523a; /* Darker red for hover effect */
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('hero-image.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    color: tomato;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ff6347; /* Tomato red */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #cc523a; /* Darker red on hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    color: #006400; /* Dark green */
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+
+#image-gallery {
+    padding: 40px 20px; /* Increased padding for better spacing */
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+#image-gallery h2 {
+    color: #006400; /* Dark green */
+    margin-bottom: 20px;
+    font-size: 28px; /* Larger font size for the heading */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+}
+
+.image-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* To round corners of the image */
+    max-width: 250px; /* Limit the width of each image item */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.image-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.image-item img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-item p {
+    padding: 15px;
+    color: #333; /* Dark text for descriptions */
+    font-weight: bold; /* Make the service names bold */
+    font-size: 18px; /* Adjust font size for descriptions */
+    background-color: #f2f2f2; /* Light background for text contrast */
+    margin: 0; /* Remove default margin */
+}
+
+
+
+
+/* Card Layout */
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    color: #006400; /* Dark green */
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #ff6347; /* Tomato red */
+}
+
+
+
+/* Testimonials Section */
+
+#testimonials {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#testimonials h2 {
+    color: #006400; /* Dark green */
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center;
+    gap: 20px; /* Space between testimonials */
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Width for each testimonial */
+    padding: 15px;
+    text-align: center;
+    flex: 1 1 200px; /* Responsive width adjustment */
+    transition: transform 0.3s ease; /* Smooth zoom-in/out transition */
+}
+
+.testimonial:hover {
+    transform: scale(1.05); /* Zoom in slightly on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly enhanced shadow on hover */
+}
+
+.user-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Smooth zoom-in/out transition */
+}
+
+.testimonial:hover .user-image {
+    transform: scale(1.1); /* Slightly zoom in user image on hover */
+}
+
+.testimonial p {
+    color: #333;
+    font-size: 14px; /* Smaller text for compact design */
+    margin: 10px 0;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    color: #006400; /* Dark green for names */
+    font-size: 14px;
+}
+
+
+
+/* Contact Form */
+#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form button {
+    padding: 10px;
+    background-color: #006400; /* Dark green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #005700; /* Darker green on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #006400; /* Dark green */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__copyright {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer__cure {
+    color: #FFFFFF; /* White*/
+}
+
+.footer__mentor {
+    color: #ff6347; /* Tomato red */
+}
+
+
+.footer__links {
+    display: flex;
+    gap: 15px; /* Space between links */
+}
+
+.footer__link {
+    color: white; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer__link:hover {
+    color: #ff6347; /* Tomato red on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #006400; /* Dark green */
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle */
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+    }
+}
